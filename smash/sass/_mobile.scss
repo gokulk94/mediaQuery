@@ -1,0 +1,169 @@
+.header {
+   padding: 1.25em 0;
+   margin-left: 5.5%;
+   width: 38.2%;
+   & > img {
+       max-width: 100%;
+       height: auto;
+   }
+}
+
+.menu {
+   padding: 2.25em 0;
+   position: absolute;
+   top: .5em;
+   right: 4em;
+   float: right;
+   & .btn, .srch {
+       float: left;
+       display: inline-block;
+       box-sizing: border-box;
+       margin-left: 1em;
+       background-color: #e95c33;
+       height: 2.4em;
+       width: auto;
+       border: none;
+       border-radius: 5px;
+       text-decoration: none;
+       color: #fff;
+       text-transform: uppercase;
+       font-weight: bold;
+       box-shadow: 0 .08em .08em rgba(0,0,0,.25);
+       transition: all ease 0.3s;
+   }
+   & > .btn {
+       margin-right: 1em;
+       padding: 10px;
+   }
+   & > .srch {
+       display: inline-block;
+       width: 2.93em;
+       height: 2.3em;
+       background: url(http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/search-icon.svg) 50% 50% no-repeat, #e95c33;
+   }
+   & > .btn:hover, .srch:hover {
+       background-color: #DA3505;
+   }
+}
+//Styles for search button.
+#ms {
+   color: rgba(0,0,0,.3);
+   display: none;
+   padding: 2em;
+   width: 100%;
+   opacity: 1;
+   transition: all .3s;
+   & label {
+       display: block;
+       padding-bottom: 7px;
+   }
+   & #mobileSearch {
+       display: inline-block;
+       padding: .5em;
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       border-radius: .5em 0 0 .5em;
+       width: 38.2%;
+       height: 2.4em;
+   }
+   & .submit {
+       background-color: #e95c33;
+       line-height: 1.5;
+       padding: .5em;
+       color: #fff;
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       border-radius: 0 .5em .5em 0;
+       width: 38.2%;
+       height: 3.3em;
+   }
+}
+
+.mn {
+   display: none;
+   height: 100%;
+   letter-spacing: .02em;
+   flex-direction: column;
+   & .mnu {
+       width: 100%;
+       margin: 1em 5.5%;
+       display: block;
+       & li {
+           line-height: 1.65;
+           padding: 4% .4725em;
+           &:not(.mnh) {
+               border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+               &:hover {
+                   background-color: yellow;
+                   color: black;
+               }
+           }
+       }
+       & .mnh {
+           font-size: 1.25em;
+           font-weight: bold;
+           margin: .25em 0 .5em;
+           border: 0;
+       }
+   }
+}
+@media (min-width: 483px) {
+   .mn {
+       flex-direction: row;
+       & .mnu li {
+           padding: 2% .4725em;
+       }
+   }
+
+}
+
+
+.footer {
+   & .aside {
+       padding: 5%;
+       & .aside_content {
+           font-family: Roboto;
+           box-sizing: border-box;
+           display: inline-block;
+           width: 30%;
+           font-size: 0.8em;
+           line-height: 1.2em;
+           word-spacing: .5em;
+           padding-right: 10px;
+           padding: 0;
+           & h3 {
+               font-size: 1em;
+               font-family: "Droid Sans";
+               padding-bottom: .08em;
+               border-bottom: .08em solid rgba(0,0,0,.1);
+           }
+       }
+       @media (max-width: 500px) {
+           & .aside_content {
+               display: block;
+               width:80%;
+               padding-bottom: 10%;
+               padding-left: 10%;
+               & img {
+                   display: inline-block;
+                   float: left;
+                   padding-right: 20px;
+               }
+               & h3 {
+                   display: inline-block;
+               }
+           }
+       }
+   }
+   & .stmt {
+       font-size: 0.7em;
+       line-height: 2em;
+       padding-left: 5%;
+       padding-bottom: 20px;
+       & .italic {
+           font-style: italic;
+       }
+   }
+}
+
+.header2 {
+   display: none;
+}

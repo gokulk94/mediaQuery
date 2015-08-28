@@ -1,0 +1,52 @@
+@media (min-width: 800px) {
+    .menu, .header, .ms-mini, .mn {
+        display: none;
+    }
+    .mn .mnu {
+        display: none;
+    }
+    .header2 {
+        display: flex;
+        height: 4em;
+        & .nw {
+            display: flex;
+            width: 79%;
+            & #bgImage {
+                background-image: url("http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/navilittlebook.png");
+                background-repeat: no-repeat;
+                background-position: top right;
+            }
+            & li {
+                display: flex;
+                // padding-top: 30px;
+                &:not(.current) {
+                    border-right: .08em solid rgba(0,0,0,.1);
+                }
+                & a {
+                    // padding: 2.5em 1em .5em;
+                    padding-top: 40px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    // height: 1.75em;
+                }
+            }
+        }
+        & .ch {
+            display: flex;
+        }
+        & .ch li {
+            display: flex;
+        }
+        & .current {
+            background-color: #fff;
+            padding-right: 20px;
+            padding-top: 20px;
+            & img {
+                padding-left: 20px;
+                padding-bottom: 0;
+                height: 31.2969px;
+                width: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,437 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 5, ../sass/_common.scss */
+body {
+  background-image: url("../img/smbg.png");
+  font-family: Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+}
+
+/* line 10, ../sass/_common.scss */
+a {
+  text-decoration: none;
+  color: #41b7d8;
+}
+
+/* line 15, ../sass/_common.scss */
+.main {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 2em;
+  box-shadow: 0 0 0.625em 0.08em rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+  border-bottom: 0.325em solid #41b7d8;
+}
+/* line 24, ../sass/_common.scss */
+.main > .post > h2 {
+  font-size: 2em;
+  font-family: "Droid Sans";
+  font-weight: 400;
+  line-height: 1.1em;
+  width: 90%;
+}
+/* line 31, ../sass/_common.scss */
+.main > .post > p {
+  font-size: 1.25em;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0.5em 0;
+}
+/* line 36, ../sass/_common.scss */
+.main > .post > p > a {
+  text-decoration: none;
+  color: #41b7d8;
+}
+/* line 41, ../sass/_common.scss */
+.main > .post > img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+/* line 47, ../sass/_common.scss */
+.main ul {
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 50, ../sass/_common.scss */
+.main ul a:hover {
+  text-decoration: underline;
+}
+/* line 53, ../sass/_common.scss */
+.main ul li {
+  padding: 15px;
+}
+/* line 56, ../sass/_common.scss */
+.main ul .a {
+  display: block;
+  font-size: 1.25em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 61, ../sass/_common.scss */
+.main ul .date {
+  display: inline-block;
+}
+@media (max-width: 516px) {
+  /* line 65, ../sass/_common.scss */
+  .main ul > .tags {
+    display: block;
+  }
+}
+/* line 69, ../sass/_common.scss */
+.main ul .tags {
+  display: inline-block;
+}
+/* line 73, ../sass/_common.scss */
+.main ul .comments {
+  display: inline-block;
+}
+/* line 78, ../sass/_common.scss */
+.main .page {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 81, ../sass/_common.scss */
+.main .page td {
+  padding: 1em 1em;
+}
+/* line 83, ../sass/_common.scss */
+.main .page td a {
+  margin: 10px;
+  padding: 20% 40%;
+  transition: all ease 0.3s;
+}
+/* line 88, ../sass/_common.scss */
+.main .page td a:hover {
+  margin: 10px;
+  padding: 20% 40%;
+  border-radius: 5px;
+  color: black;
+  background-color: #41b7d8;
+}
+
+/* line 1, ../sass/_mobile.scss */
+.header {
+  padding: 1.25em 0;
+  margin-left: 5.5%;
+  width: 38.2%;
+}
+/* line 5, ../sass/_mobile.scss */
+.header > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 11, ../sass/_mobile.scss */
+.menu {
+  padding: 2.25em 0;
+  position: absolute;
+  top: .5em;
+  right: 4em;
+  float: right;
+}
+/* line 17, ../sass/_mobile.scss */
+.menu .btn, .menu .srch {
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 1em;
+  background-color: #e95c33;
+  height: 2.4em;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 0.08em 0.08em rgba(0, 0, 0, 0.25);
+  transition: all ease 0.3s;
+}
+/* line 34, ../sass/_mobile.scss */
+.menu > .btn {
+  margin-right: 1em;
+  padding: 10px;
+}
+/* line 38, ../sass/_mobile.scss */
+.menu > .srch {
+  display: inline-block;
+  width: 2.93em;
+  height: 2.3em;
+  background: url(http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/search-icon.svg) 50% 50% no-repeat, #e95c33;
+}
+/* line 44, ../sass/_mobile.scss */
+.menu > .btn:hover, .menu .srch:hover {
+  background-color: #DA3505;
+}
+
+/* line 49, ../sass/_mobile.scss */
+#ms {
+  color: rgba(0, 0, 0, 0.3);
+  display: none;
+  padding: 2em;
+  width: 100%;
+  opacity: 1;
+  transition: all .3s;
+}
+/* line 56, ../sass/_mobile.scss */
+#ms label {
+  display: block;
+  padding-bottom: 7px;
+}
+/* line 60, ../sass/_mobile.scss */
+#ms #mobileSearch {
+  display: inline-block;
+  padding: .5em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .5em 0 0 .5em;
+  width: 38.2%;
+  height: 2.4em;
+}
+/* line 68, ../sass/_mobile.scss */
+#ms .submit {
+  background-color: #e95c33;
+  line-height: 1.5;
+  padding: .5em;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0 .5em .5em 0;
+  width: 38.2%;
+  height: 3.3em;
+}
+
+/* line 80, ../sass/_mobile.scss */
+.mn {
+  display: none;
+  height: 100%;
+  letter-spacing: .02em;
+  flex-direction: column;
+}
+/* line 85, ../sass/_mobile.scss */
+.mn .mnu {
+  width: 100%;
+  margin: 1em 5.5%;
+  display: block;
+}
+/* line 89, ../sass/_mobile.scss */
+.mn .mnu li {
+  line-height: 1.65;
+  padding: 4% .4725em;
+}
+/* line 92, ../sass/_mobile.scss */
+.mn .mnu li:not(.mnh) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 94, ../sass/_mobile.scss */
+.mn .mnu li:not(.mnh):hover {
+  background-color: yellow;
+  color: black;
+}
+/* line 100, ../sass/_mobile.scss */
+.mn .mnu .mnh {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: .25em 0 .5em;
+  border: 0;
+}
+
+@media (min-width: 483px) {
+  /* line 109, ../sass/_mobile.scss */
+  .mn {
+    flex-direction: row;
+  }
+  /* line 111, ../sass/_mobile.scss */
+  .mn .mnu li {
+    padding: 2% .4725em;
+  }
+}
+/* line 120, ../sass/_mobile.scss */
+.footer .aside {
+  padding: 5%;
+}
+/* line 122, ../sass/_mobile.scss */
+.footer .aside .aside_content {
+  font-family: Roboto;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30%;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  word-spacing: .5em;
+  padding-right: 10px;
+  padding: 0;
+}
+/* line 132, ../sass/_mobile.scss */
+.footer .aside .aside_content h3 {
+  font-size: 1em;
+  font-family: "Droid Sans";
+  padding-bottom: .08em;
+  border-bottom: 0.08em solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 500px) {
+  /* line 140, ../sass/_mobile.scss */
+  .footer .aside .aside_content {
+    display: block;
+    width: 80%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+  }
+  /* line 145, ../sass/_mobile.scss */
+  .footer .aside .aside_content img {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+  }
+  /* line 150, ../sass/_mobile.scss */
+  .footer .aside .aside_content h3 {
+    display: inline-block;
+  }
+}
+/* line 156, ../sass/_mobile.scss */
+.footer .stmt {
+  font-size: 0.7em;
+  line-height: 2em;
+  padding-left: 5%;
+  padding-bottom: 20px;
+}
+/* line 161, ../sass/_mobile.scss */
+.footer .stmt .italic {
+  font-style: italic;
+}
+
+/* line 167, ../sass/_mobile.scss */
+.header2 {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  /* line 2, ../sass/_tablet.scss */
+  .menu, .header, .ms-mini, .mn {
+    display: none;
+  }
+
+  /* line 5, ../sass/_tablet.scss */
+  .mn .mnu {
+    display: none;
+  }
+
+  /* line 8, ../sass/_tablet.scss */
+  .header2 {
+    display: flex;
+    height: 4em;
+  }
+  /* line 11, ../sass/_tablet.scss */
+  .header2 .nw {
+    display: flex;
+    width: 79%;
+  }
+  /* line 14, ../sass/_tablet.scss */
+  .header2 .nw #bgImage {
+    background-image: url("http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/navilittlebook.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  /* line 19, ../sass/_tablet.scss */
+  .header2 .nw li {
+    display: flex;
+  }
+  /* line 22, ../sass/_tablet.scss */
+  .header2 .nw li:not(.current) {
+    border-right: 0.08em solid rgba(0, 0, 0, 0.1);
+  }
+  /* line 25, ../sass/_tablet.scss */
+  .header2 .nw li a {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 34, ../sass/_tablet.scss */
+  .header2 .ch {
+    display: flex;
+  }
+  /* line 37, ../sass/_tablet.scss */
+  .header2 .ch li {
+    display: flex;
+  }
+  /* line 40, ../sass/_tablet.scss */
+  .header2 .current {
+    background-color: #fff;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  /* line 44, ../sass/_tablet.scss */
+  .header2 .current img {
+    padding-left: 20px;
+    padding-bottom: 0;
+    height: 31.2969px;
+    width: auto;
+  }
+}

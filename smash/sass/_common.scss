@@ -1,0 +1,97 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+ body {
+     background-image: url("../img/smbg.png");
+     font-family: Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+ }
+
+ a {
+    text-decoration: none;
+    color: #41b7d8;
+ }
+
+ .main {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 2em;
+    box-shadow: 0 0 .625em .08em rgba(0,0,0,.05);
+    // margin-right: 10px;
+    margin-bottom: 10px;
+    border-bottom: 0.325em solid #41b7d8;
+    & > .post {
+        & > h2 {
+            font-size: 2em;
+            font-family: "Droid Sans";
+            font-weight: 400;
+            line-height: 1.1em;
+            width: 90%;
+        }
+        & > p {
+            font-size: 1.25em;
+            line-height: 1.35;
+            margin: 0;
+            padding: 0.5em 0;
+            & > a {
+                text-decoration: none;
+                color: #41b7d8;
+            }
+        }
+        & > img {
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+    }
+    & ul {
+        padding: 10px;
+        color: rgba(0,0,0,.3);
+        & a:hover {
+            text-decoration: underline;
+        }
+        & li {
+            padding: 15px;
+        }
+        & .a {
+            display: block;
+            font-size: 1.25em;
+            border-bottom: 1px solid rgba(0,0,0,.1);
+        }
+        & .date {
+            display: inline-block;
+        }
+        @media (max-width: 516px) {
+            & > .tags {
+                display: block;
+            }
+        }
+        & .tags {
+            display: inline-block;
+            // float: right;
+        }
+        & .comments {
+            display: inline-block;
+        }
+    }
+
+    & .page {
+        margin: 0 auto;
+        text-align: center;
+        & td {
+            padding: 1em 1em;
+            & a {
+                margin: 10px;
+                padding: 20% 40%;
+                transition: all ease .3s
+            }
+            & a:hover {
+                margin: 10px;
+                padding: 20% 40%;
+                border-radius: 5px;
+                color: black;
+                background-color: #41b7d8;
+            }
+        }
+    }
+ }
