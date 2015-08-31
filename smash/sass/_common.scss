@@ -12,8 +12,15 @@
     color: #41b7d8;
  }
 
+.body {
+    display: block;
+    // flex-direction: column;
+    width: 100%;
+}
+
  .main {
-    max-width: 100%;
+    display: block;
+    // max-width: 100%;
     background-color: #fff;
     padding: 2em;
     box-shadow: 0 0 .625em .08em rgba(0,0,0,.05);

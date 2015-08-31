@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../usr/lib/ruby/gems/2.2.0/gems/compass-1.0.3/vendor/bundle/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -83,15 +83,21 @@ a {
 }
 
 /* line 15, ../sass/_common.scss */
+.body {
+  display: block;
+  width: 100%;
+}
+
+/* line 21, ../sass/_common.scss */
 .main {
-  max-width: 100%;
+  display: block;
   background-color: #fff;
   padding: 2em;
   box-shadow: 0 0 0.625em 0.08em rgba(0, 0, 0, 0.05);
   margin-bottom: 10px;
   border-bottom: 0.325em solid #41b7d8;
 }
-/* line 24, ../sass/_common.scss */
+/* line 31, ../sass/_common.scss */
 .main > .post > h2 {
   font-size: 2em;
   font-family: "Droid Sans";
@@ -99,77 +105,77 @@ a {
   line-height: 1.1em;
   width: 90%;
 }
-/* line 31, ../sass/_common.scss */
+/* line 38, ../sass/_common.scss */
 .main > .post > p {
   font-size: 1.25em;
   line-height: 1.35;
   margin: 0;
   padding: 0.5em 0;
 }
-/* line 36, ../sass/_common.scss */
+/* line 43, ../sass/_common.scss */
 .main > .post > p > a {
   text-decoration: none;
   color: #41b7d8;
 }
-/* line 41, ../sass/_common.scss */
+/* line 48, ../sass/_common.scss */
 .main > .post > img {
   max-width: 100%;
   height: auto;
   border: 0;
 }
-/* line 47, ../sass/_common.scss */
+/* line 54, ../sass/_common.scss */
 .main ul {
   padding: 10px;
   color: rgba(0, 0, 0, 0.3);
 }
-/* line 50, ../sass/_common.scss */
+/* line 57, ../sass/_common.scss */
 .main ul a:hover {
   text-decoration: underline;
 }
-/* line 53, ../sass/_common.scss */
+/* line 60, ../sass/_common.scss */
 .main ul li {
   padding: 15px;
 }
-/* line 56, ../sass/_common.scss */
+/* line 63, ../sass/_common.scss */
 .main ul .a {
   display: block;
   font-size: 1.25em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* line 61, ../sass/_common.scss */
+/* line 68, ../sass/_common.scss */
 .main ul .date {
   display: inline-block;
 }
 @media (max-width: 516px) {
-  /* line 65, ../sass/_common.scss */
+  /* line 72, ../sass/_common.scss */
   .main ul > .tags {
     display: block;
   }
 }
-/* line 69, ../sass/_common.scss */
+/* line 76, ../sass/_common.scss */
 .main ul .tags {
   display: inline-block;
 }
-/* line 73, ../sass/_common.scss */
+/* line 80, ../sass/_common.scss */
 .main ul .comments {
   display: inline-block;
 }
-/* line 78, ../sass/_common.scss */
+/* line 85, ../sass/_common.scss */
 .main .page {
   margin: 0 auto;
   text-align: center;
 }
-/* line 81, ../sass/_common.scss */
+/* line 88, ../sass/_common.scss */
 .main .page td {
   padding: 1em 1em;
 }
-/* line 83, ../sass/_common.scss */
+/* line 90, ../sass/_common.scss */
 .main .page td a {
   margin: 10px;
   padding: 20% 40%;
   transition: all ease 0.3s;
 }
-/* line 88, ../sass/_common.scss */
+/* line 95, ../sass/_common.scss */
 .main .page td a:hover {
   margin: 10px;
   padding: 20% 40%;
@@ -372,9 +378,19 @@ a {
   display: none;
 }
 
+/* line 171, ../sass/_mobile.scss */
+.tab_search {
+  display: none;
+}
+
+/* line 175, ../sass/_mobile.scss */
+.col {
+  display: none;
+}
+
 @media (min-width: 800px) {
   /* line 2, ../sass/_tablet.scss */
-  .menu, .header, .ms-mini, .mn {
+  .menu, .header, .ms-mini, .mn, #ms {
     display: none;
   }
 
@@ -402,36 +418,160 @@ a {
   /* line 19, ../sass/_tablet.scss */
   .header2 .nw li {
     display: flex;
+    transition: all ease 0.3s;
   }
-  /* line 22, ../sass/_tablet.scss */
+  /* line 23, ../sass/_tablet.scss */
   .header2 .nw li:not(.current) {
     border-right: 0.08em solid rgba(0, 0, 0, 0.1);
   }
-  /* line 25, ../sass/_tablet.scss */
+  /* line 26, ../sass/_tablet.scss */
+  .header2 .nw li:not(.current):hover {
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    background-color: #ff6;
+  }
+  /* line 31, ../sass/_tablet.scss */
   .header2 .nw li a {
+    color: rgba(0, 0, 0, 0.6);
+    opacity: 0.5;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 34, ../sass/_tablet.scss */
+  /* line 43, ../sass/_tablet.scss */
   .header2 .ch {
     display: flex;
   }
-  /* line 37, ../sass/_tablet.scss */
+  /* line 46, ../sass/_tablet.scss */
   .header2 .ch li {
     display: flex;
   }
-  /* line 40, ../sass/_tablet.scss */
+  /* line 49, ../sass/_tablet.scss */
   .header2 .current {
     background-color: #fff;
     padding-right: 20px;
     padding-top: 20px;
   }
-  /* line 44, ../sass/_tablet.scss */
+  /* line 53, ../sass/_tablet.scss */
   .header2 .current img {
     padding-left: 20px;
     padding-bottom: 0;
     height: 31.2969px;
     width: auto;
+  }
+
+  /* line 61, ../sass/_tablet.scss */
+  .tab_search {
+    display: block;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 2em 0;
+    width: 100%;
+    opacity: 1;
+    transition: all .3s;
+    text-align: center;
+  }
+  /* line 71, ../sass/_tablet.scss */
+  .tab_search label {
+    text-align: left;
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 1px;
+  }
+  /* line 77, ../sass/_tablet.scss */
+  .tab_search #mobileSearch {
+    display: inline-block;
+    padding: .5em;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .5em 0 0 .5em;
+    width: 70%;
+    height: 2.4em;
+  }
+  /* line 85, ../sass/_tablet.scss */
+  .tab_search .submit {
+    background-color: #e95c33;
+    line-height: 1.5;
+    padding: .9em;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 .5em .5em 0;
+    width: 20%;
+    height: 3.3em;
+  }
+
+  /* line 96, ../sass/_tablet.scss */
+  .content {
+    width: 80%;
+    display: flex;
+    position: relative;
+    left: 0px;
+    box-shadow: 0 0 0 0 transparent;
+    flex-direction: column;
+  }
+
+  /* line 105, ../sass/_tablet.scss */
+  .col {
+    display: block;
+    position: relative;
+    float: left;
+    width: 20%;
+    background-color: #fff;
+  }
+  /* line 111, ../sass/_tablet.scss */
+  .col h3 {
+    font-size: 1.2em;
+    padding: 14px;
+    letter-spacing: .175em;
+    transition: all ease 0.3s;
+  }
+  /* line 116, ../sass/_tablet.scss */
+  .col h3:hover {
+    background-color: #ff6;
+  }
+  /* line 120, ../sass/_tablet.scss */
+  .col .title {
+    font-size: .9em;
+    padding: 7px 14px 7px 14px;
+    transition: all ease 0.3s;
+  }
+  /* line 124, ../sass/_tablet.scss */
+  .col .title:hover {
+    background-color: #ff6;
+  }
+  /* line 131, ../sass/_tablet.scss */
+  .col .coding {
+    border-left: 10px solid #c9e9e5;
+    transition: border-color .3s;
+  }
+  /* line 134, ../sass/_tablet.scss */
+  .col .coding:hover {
+    border-left-color: #3CEAD5;
+  }
+  /* line 138, ../sass/_tablet.scss */
+  .col .design {
+    border-left: 10px solid #cdeeaa;
+    transition: border-color .3s;
+  }
+  /* line 141, ../sass/_tablet.scss */
+  .col .design:hover {
+    border-left-color: #95E83D;
+  }
+  /* line 145, ../sass/_tablet.scss */
+  .col .mobile {
+    border-left: 10px solid #f9f0a8;
+    transition: border-color .3s;
+  }
+  /* line 148, ../sass/_tablet.scss */
+  .col .mobile:hover {
+    border-left-color: #F7DF23;
+  }
+  /* line 152, ../sass/_tablet.scss */
+  .col .graphics {
+    border-left: 10px solid #e0cfdf;
+    transition: border-color .3s;
+  }
+  /* line 155, ../sass/_tablet.scss */
+  .col .graphics:hover {
+    border-left-color: #D851D0;
   }
 }
