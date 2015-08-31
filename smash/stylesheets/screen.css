@@ -172,7 +172,7 @@ a {
 /* line 90, ../sass/_common.scss */
 .main .page td a {
   margin: 10px;
-  padding: 20% 40%;
+  padding: 10px 10px;
   transition: all ease 0.3s;
 }
 /* line 95, ../sass/_common.scss */
@@ -395,7 +395,7 @@ a {
 
 @media (min-width: 800px) {
   /* line 2, ../sass/_tablet.scss */
-  .menu, .header, .ms-mini, .mn, #ms {
+  .menu, .header, .ms-mini, .mn {
     display: none;
   }
 
@@ -405,37 +405,42 @@ a {
   }
 
   /* line 8, ../sass/_tablet.scss */
+  #ms {
+    display: none;
+  }
+
+  /* line 11, ../sass/_tablet.scss */
   .header2 {
     display: flex;
     height: 4em;
   }
-  /* line 11, ../sass/_tablet.scss */
+  /* line 14, ../sass/_tablet.scss */
   .header2 .nw {
     display: flex;
     width: 79%;
   }
-  /* line 14, ../sass/_tablet.scss */
+  /* line 17, ../sass/_tablet.scss */
   .header2 .nw #bgImage {
     background-image: url("http://media.mediatemple.netdna-cdn.com/wp-content/themes/smashing-magazine/assets/images/navilittlebook.png");
     background-repeat: no-repeat;
     background-position: top right;
   }
-  /* line 19, ../sass/_tablet.scss */
+  /* line 22, ../sass/_tablet.scss */
   .header2 .nw li {
     display: flex;
     transition: all ease 0.3s;
   }
-  /* line 23, ../sass/_tablet.scss */
+  /* line 26, ../sass/_tablet.scss */
   .header2 .nw li:not(.current) {
     border-right: 0.08em solid rgba(0, 0, 0, 0.1);
   }
-  /* line 26, ../sass/_tablet.scss */
+  /* line 29, ../sass/_tablet.scss */
   .header2 .nw li:not(.current):hover {
     color: rgba(0, 0, 0, 0.6);
     opacity: 1;
     background-color: #ff6;
   }
-  /* line 31, ../sass/_tablet.scss */
+  /* line 34, ../sass/_tablet.scss */
   .header2 .nw li a {
     color: rgba(0, 0, 0, 0.6);
     opacity: 0.5;
@@ -443,21 +448,21 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
-  /* line 43, ../sass/_tablet.scss */
+  /* line 46, ../sass/_tablet.scss */
   .header2 .ch {
     display: flex;
   }
-  /* line 46, ../sass/_tablet.scss */
+  /* line 49, ../sass/_tablet.scss */
   .header2 .ch li {
     display: flex;
   }
-  /* line 49, ../sass/_tablet.scss */
+  /* line 52, ../sass/_tablet.scss */
   .header2 .current {
     background-color: #fff;
     padding-right: 20px;
     padding-top: 20px;
   }
-  /* line 53, ../sass/_tablet.scss */
+  /* line 56, ../sass/_tablet.scss */
   .header2 .current img {
     padding-left: 20px;
     padding-bottom: 0;
@@ -465,7 +470,7 @@ a {
     width: auto;
   }
 
-  /* line 61, ../sass/_tablet.scss */
+  /* line 64, ../sass/_tablet.scss */
   .tab_search {
     display: block;
     background-color: #fff;
@@ -476,14 +481,14 @@ a {
     transition: all .3s;
     text-align: center;
   }
-  /* line 71, ../sass/_tablet.scss */
+  /* line 74, ../sass/_tablet.scss */
   .tab_search label {
     text-align: left;
     display: block;
     padding-left: 30px;
     padding-bottom: 1px;
   }
-  /* line 77, ../sass/_tablet.scss */
+  /* line 80, ../sass/_tablet.scss */
   .tab_search #mobileSearch {
     display: inline-block;
     padding: .5em;
@@ -492,7 +497,7 @@ a {
     width: 70%;
     height: 2.4em;
   }
-  /* line 85, ../sass/_tablet.scss */
+  /* line 88, ../sass/_tablet.scss */
   .tab_search .submit {
     background-color: #e95c33;
     line-height: 1.5;
@@ -504,7 +509,7 @@ a {
     height: 3.3em;
   }
 
-  /* line 96, ../sass/_tablet.scss */
+  /* line 99, ../sass/_tablet.scss */
   .content {
     width: 80%;
     display: flex;
@@ -514,7 +519,7 @@ a {
     flex-direction: column;
   }
 
-  /* line 105, ../sass/_tablet.scss */
+  /* line 108, ../sass/_tablet.scss */
   .col {
     display: block;
     position: relative;
@@ -522,61 +527,61 @@ a {
     width: 20%;
     background-color: #fff;
   }
-  /* line 111, ../sass/_tablet.scss */
+  /* line 114, ../sass/_tablet.scss */
   .col h3 {
     font-size: 1.2em;
     padding: 14px;
     letter-spacing: .175em;
     transition: all ease 0.3s;
   }
-  /* line 116, ../sass/_tablet.scss */
+  /* line 119, ../sass/_tablet.scss */
   .col h3:hover {
     background-color: #ff6;
   }
-  /* line 120, ../sass/_tablet.scss */
+  /* line 123, ../sass/_tablet.scss */
   .col .title {
     font-size: .9em;
     padding: 7px 14px 7px 14px;
     transition: all ease 0.3s;
     color: #777;
   }
-  /* line 125, ../sass/_tablet.scss */
+  /* line 128, ../sass/_tablet.scss */
   .col .title:hover {
     background-color: #ff6;
   }
-  /* line 132, ../sass/_tablet.scss */
+  /* line 135, ../sass/_tablet.scss */
   .col .coding {
     border-left: 10px solid #c9e9e5;
     transition: border-color .3s;
   }
-  /* line 135, ../sass/_tablet.scss */
+  /* line 138, ../sass/_tablet.scss */
   .col .coding:hover {
     border-left-color: #3CEAD5;
   }
-  /* line 139, ../sass/_tablet.scss */
+  /* line 142, ../sass/_tablet.scss */
   .col .design {
     border-left: 10px solid #cdeeaa;
     transition: border-color .3s;
   }
-  /* line 142, ../sass/_tablet.scss */
+  /* line 145, ../sass/_tablet.scss */
   .col .design:hover {
     border-left-color: #95E83D;
   }
-  /* line 146, ../sass/_tablet.scss */
+  /* line 149, ../sass/_tablet.scss */
   .col .mobile {
     border-left: 10px solid #f9f0a8;
     transition: border-color .3s;
   }
-  /* line 149, ../sass/_tablet.scss */
+  /* line 152, ../sass/_tablet.scss */
   .col .mobile:hover {
     border-left-color: #F7DF23;
   }
-  /* line 153, ../sass/_tablet.scss */
+  /* line 156, ../sass/_tablet.scss */
   .col .graphics {
     border-left: 10px solid #e0cfdf;
     transition: border-color .3s;
   }
-  /* line 156, ../sass/_tablet.scss */
+  /* line 159, ../sass/_tablet.scss */
   .col .graphics:hover {
     border-left-color: #D851D0;
   }
