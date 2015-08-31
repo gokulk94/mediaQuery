@@ -33,8 +33,8 @@
                     color: rgba(0, 0, 0,0.6);
                     opacity: 0.5;
                     padding-top: 40px;
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    padding-left: 16px;
+                    padding-right: 16px;
                     // height: 1.75em;
 
                 }
@@ -121,6 +121,7 @@
             font-size: .9em;
             padding: 7px 14px 7px 14px;
             transition: all ease 0.3s;
+            color: #777;
             &:hover {
                 background-color: #ff6;
             }

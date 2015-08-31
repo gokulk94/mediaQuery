@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "_common.scss";
-@import "_mobile.scss";
-@import "_tablet.scss";
+@import "_common";
+@import "_mobile";
+@import "_tablet";
+@import "_desktop";
