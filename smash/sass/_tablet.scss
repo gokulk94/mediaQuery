@@ -1,11 +1,8 @@
 @media (min-width: 800px) {
-    .menu, .header, .ms-mini, .mn {
-        display: none;
+    .menu, .header, .ms-mini, .mn, #ms {
+        display: none !important;
     }
     .mn .mnu {
-        display: none;
-    }
-    #ms {
         display: none;
     }
     .header2 {

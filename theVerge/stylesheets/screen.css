@@ -1,0 +1,258 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_common.scss */
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 4, ../sass/_common.scss */
+header {
+  height: 56px;
+  width: auto;
+  position: relative;
+  background-color: #fa4b2a;
+}
+/* line 9, ../sass/_common.scss */
+header img {
+  padding-left: 20px;
+  float: left;
+  display: inline-block;
+}
+/* line 14, ../sass/_common.scss */
+header #menu {
+  max-width: 30px;
+  width: 100%;
+  height: auto;
+  padding-top: 12px;
+  padding-right: 11px;
+}
+/* line 21, ../sass/_common.scss */
+header #logo {
+  padding-left: 5px;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  padding-top: 16px;
+}
+/* line 28, ../sass/_common.scss */
+header .m-articles {
+  float: right;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  border-left: 1px solid #fff;
+}
+/* line 37, ../sass/_common.scss */
+header .m-articles strong {
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.15;
+  display: block;
+  letter-spacing: .1em;
+}
+/* line 44, ../sass/_common.scss */
+header .m-articles em {
+  text-transform: uppercase;
+  font: .6em;
+  font-weight: bold;
+}
+
+/* line 3, ../sass/_mobile.scss */
+header .icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+/* line 8, ../sass/_mobile.scss */
+header .dp {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+/* line 13, ../sass/_mobile.scss */
+header .menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  transition: all ease .2s;
+  color: #fff;
+}
+/* line 22, ../sass/_mobile.scss */
+header .menu ul {
+  width: 250px;
+  font-family: 'Dosis', sans-serif;
+  color: #fff;
+  z-index: 1000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 29, ../sass/_mobile.scss */
+header .menu ul a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 34, ../sass/_mobile.scss */
+header .menu ul li {
+  padding: 15px;
+  border-top: 1px solid #2f2f2f;
+  transition: all ease .1s;
+}
+/* line 39, ../sass/_mobile.scss */
+header .menu ul li:hover a {
+  color: #fa4b2a;
+}
+/* line 44, ../sass/_mobile.scss */
+header .menu ul .user {
+  background-color: black;
+  height: 100%;
+}
+/* line 48, ../sass/_mobile.scss */
+header .menu ul li:not(.user) {
+  background-color: #222222;
+}
+/* line 51, ../sass/_mobile.scss */
+header .menu ul .triangle {
+  width: 50px;
+  height: auto;
+}
+/* line 55, ../sass/_mobile.scss */
+header .menu ul .search-hide {
+  display: none;
+}
+/* line 60, ../sass/_mobile.scss */
+header .ar {
+  align-items: flex-end;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  right: -100%;
+  z-index: 91;
+  transition: all ease .2s;
+}
+/* line 68, ../sass/_mobile.scss */
+header .ar .new-articles {
+  z-index: 1001;
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  font-size: 1em;
+}
+/* line 77, ../sass/_mobile.scss */
+header .ar .new-articles .indi {
+  border-left: 2px solid #fa4b2a;
+}
+/* line 80, ../sass/_mobile.scss */
+header .ar .new-articles h3 {
+  color: #fff;
+  background-color: #fa4b2a;
+  display: inline-block;
+  padding: 4px;
+  font-family: 'Dosis', sans-serif;
+  font-size: .8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 1em 0 1em;
+}
+/* line 91, ../sass/_mobile.scss */
+header .ar .new-articles li {
+  font-family: 'Andada', serif;
+  padding: 15px;
+}
+/* line 94, ../sass/_mobile.scss */
+header .ar .new-articles li span {
+  text-transform: lowercase;
+  display: block;
+  padding: 0 0 5px 0;
+  font-size: .7em;
+}
+/* line 100, ../sass/_mobile.scss */
+header .ar .new-articles li p {
+  text-indent: 3px;
+}
+/* line 106, ../sass/_mobile.scss */
+header .hide-left {
+  left: -100%;
+}
+/* line 109, ../sass/_mobile.scss */
+header .show-left {
+  left: 0%;
+}
+/* line 112, ../sass/_mobile.scss */
+header .hide-right {
+  right: -100%;
+}
+/* line 115, ../sass/_mobile.scss */
+header .show-right {
+  right: 0%;
+}

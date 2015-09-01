@@ -1,0 +1,50 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+header {
+    height: 56px;
+    width: auto;
+    position: relative;
+    background-color: #fa4b2a;
+    img {
+        padding-left: 20px;
+        float: left;
+        display: inline-block;
+    }
+    #menu {
+        max-width: 30px;
+        width: 100%;
+        height: auto;
+        padding-top: 12px;
+        padding-right: 11px;
+    }
+    #logo {
+        padding-left: 5px;
+        max-width: 140px;
+        width: 100%;
+        height: auto;
+        padding-top: 16px;
+    }
+    .m-articles {
+        float:right;
+        // position: absolute;
+        // right: 0;
+        color: #fff;
+        font-family: 'Dosis', sans-serif;
+        font-weight: bold;
+        // margin-left: px;
+        border-left: 1px solid #fff;
+        strong {
+            font-size: 2em;
+            text-align: center;
+            line-height: 1.15;
+            display: block;
+            letter-spacing: .1em;
+        }
+        em {
+            text-transform: uppercase;
+            font: .6em;
+            font-weight: bold;
+        }
+    }
+}
