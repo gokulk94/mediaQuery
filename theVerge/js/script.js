@@ -21,9 +21,11 @@ var art = false;
 function art_run() {
     art = !(art);
     if(art == true) {
+        // f.style.display = "block"
         f.className = "ar"+" show-right";
         // f.style.position ="absolute"
     } else {
+        // f.style.display = "none";
         f.className = "ar"+" hide-right";
         // f.style.position = "fixed";
     }
