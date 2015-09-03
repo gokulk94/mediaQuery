@@ -448,7 +448,7 @@ main .bat-two ul li {
   padding: 1em;
   width: 100%;
   height: 112px;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
 /* line 295, ../sass/_mobile.scss */
 main .bat-two ul li img {
@@ -477,8 +477,24 @@ main .bat-two ul li .content h3 {
   font-size: 1.1em;
   padding-bottom: 5px;
 }
-/* line 324, ../sass/_mobile.scss */
-main .see-more {
+/* line 320, ../sass/_mobile.scss */
+main .bat-two ul li .content .image {
+  display: none;
+  height: 200px;
+  width: auto;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* line 330, ../sass/_mobile.scss */
+main .bat-two ul li .content .t-content {
+  display: none;
+}
+
+/* line 339, ../sass/_mobile.scss */
+.see-more {
   font-size: 1.5em;
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
@@ -488,12 +504,12 @@ main .see-more {
   color: #fa4b2a;
   background-color: #f7f1ee;
 }
-/* line 333, ../sass/_mobile.scss */
-main .see-more:hover {
+/* line 348, ../sass/_mobile.scss */
+.see-more:hover {
   text-decoration: underline;
 }
 
-/* line 338, ../sass/_mobile.scss */
+/* line 352, ../sass/_mobile.scss */
 .to-top {
   font-size: 1.2em;
   font-family: 'Dosis', sans-serif;
@@ -502,14 +518,14 @@ main .see-more:hover {
   padding: 1.1em 0 1.1em;
   background-color: #555;
 }
-/* line 345, ../sass/_mobile.scss */
+/* line 359, ../sass/_mobile.scss */
 .to-top a {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 352, ../sass/_mobile.scss */
+/* line 366, ../sass/_mobile.scss */
 footer {
   position: absolute;
   width: 100%;
@@ -519,17 +535,17 @@ footer {
   background-color: black;
   font-family: 'Andada', serif;
 }
-/* line 360, ../sass/_mobile.scss */
+/* line 374, ../sass/_mobile.scss */
 footer a {
   box-sizing: border-box;
   color: #999;
   text-decoration: none;
 }
-/* line 364, ../sass/_mobile.scss */
+/* line 378, ../sass/_mobile.scss */
 footer a:hover {
   color: #fff;
 }
-/* line 368, ../sass/_mobile.scss */
+/* line 382, ../sass/_mobile.scss */
 footer .search {
   width: 100%;
   box-sizing: border-box;
@@ -537,34 +553,34 @@ footer .search {
   padding: 1.5em;
   text-align: center;
 }
-/* line 375, ../sass/_mobile.scss */
+/* line 389, ../sass/_mobile.scss */
 footer .search input {
   font-size: 1em;
   width: 90%;
   padding: 1.1em;
 }
-/* line 382, ../sass/_mobile.scss */
+/* line 396, ../sass/_mobile.scss */
 footer .foot-sections {
   box-sizing: border-box;
   float: left;
   width: 50%;
   padding-left: 5%;
 }
-/* line 390, ../sass/_mobile.scss */
+/* line 404, ../sass/_mobile.scss */
 footer .foot-sections ul li {
   margin-top: 17px;
 }
-/* line 395, ../sass/_mobile.scss */
+/* line 409, ../sass/_mobile.scss */
 footer .foot-basics {
   box-sizing: border-box;
   width: 50%;
   float: left;
 }
-/* line 402, ../sass/_mobile.scss */
+/* line 416, ../sass/_mobile.scss */
 footer .foot-basics ul li {
   margin-top: 17px;
 }
-/* line 407, ../sass/_mobile.scss */
+/* line 421, ../sass/_mobile.scss */
 footer .foot-logo {
   float: left;
   width: 100%;
@@ -573,46 +589,104 @@ footer .foot-logo {
   padding: 10px;
   padding-top: 15px;
 }
-/* line 414, ../sass/_mobile.scss */
+/* line 428, ../sass/_mobile.scss */
 footer .foot-logo .vox-logo {
   height: 50px;
   width: 154px;
 }
-/* line 418, ../sass/_mobile.scss */
+/* line 432, ../sass/_mobile.scss */
 footer .foot-logo p {
   font-size: .9em;
   color: #fff;
 }
-/* line 421, ../sass/_mobile.scss */
+/* line 435, ../sass/_mobile.scss */
 footer .foot-logo p a {
   color: #fa4b2a;
 }
-/* line 423, ../sass/_mobile.scss */
+/* line 437, ../sass/_mobile.scss */
 footer .foot-logo p a:hover {
   text-decoration: underline;
 }
-/* line 429, ../sass/_mobile.scss */
+/* line 443, ../sass/_mobile.scss */
 footer .foot-social {
   display: none;
   float: left;
   box-sizing: border-box;
 }
-/* line 434, ../sass/_mobile.scss */
+/* line 448, ../sass/_mobile.scss */
 footer .foot-social ul li {
   margin-top: 17px;
 }
 
 @media (min-width: 500px) {
-  /* line 446, ../sass/_mobile.scss */
+  /* line 460, ../sass/_mobile.scss */
   main .bat-two ul li .content h3 {
     font-size: 1.4em;
   }
 
-  /* line 456, ../sass/_mobile.scss */
+  /* line 470, ../sass/_mobile.scss */
   footer .foot-basics, footer .foot-sections, footer .foot-social {
     width: 33%;
   }
-  /* line 459, ../sass/_mobile.scss */
+  /* line 473, ../sass/_mobile.scss */
+  footer .foot-social {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  /* line 481, ../sass/_mobile.scss */
+  main .bat-two ul {
+    display: block;
+  }
+  /* line 483, ../sass/_mobile.scss */
+  main .bat-two ul li {
+    width: 50%;
+    height: 100%;
+  }
+  /* line 486, ../sass/_mobile.scss */
+  main .bat-two ul li img {
+    display: none;
+  }
+  /* line 489, ../sass/_mobile.scss */
+  main .bat-two ul li .content {
+    padding: 4px;
+  }
+  /* line 491, ../sass/_mobile.scss */
+  main .bat-two ul li .content h3 {
+    padding: 6px;
+    font-size: 1.5em;
+  }
+  /* line 495, ../sass/_mobile.scss */
+  main .bat-two ul li .content p {
+    padding: 6px;
+  }
+  /* line 498, ../sass/_mobile.scss */
+  main .bat-two ul li .content .image {
+    display: block;
+    margin: 6px;
+  }
+  /* line 502, ../sass/_mobile.scss */
+  main .bat-two ul li .content .t-content {
+    display: block;
+    padding: 6px;
+    line-height: 1.4;
+  }
+  /* line 509, ../sass/_mobile.scss */
+  main .bat-two ul li:nth-child(2n+1) {
+    float: left;
+    border-right: 1px solid #ddd;
+  }
+  /* line 513, ../sass/_mobile.scss */
+  main .bat-two ul li:nth-child(2n) {
+    float: right;
+    border-left: 1px solid #ddd;
+  }
+
+  /* line 521, ../sass/_mobile.scss */
+  footer .foot-basics, footer .foot-sections, footer .foot-social, footer .search {
+    width: 25%;
+  }
+  /* line 524, ../sass/_mobile.scss */
   footer .foot-social {
     display: block;
   }
