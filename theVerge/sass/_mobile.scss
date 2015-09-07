@@ -62,6 +62,7 @@ header {
         }
     }
     .ar {
+        display: block;
         // align-items: flex-end;
         width: 100%;
         position: fixed;
@@ -73,7 +74,7 @@ header {
         transition: all ease .2s;
         .new-articles {
             // position: fixerd;
-            // overflow-y: auto;
+            overflow-y: auto;
             float: right;
             z-index: 1001;
             height: 100%;
@@ -302,7 +303,6 @@ main {
                     float: left;
                     width: 75px;
                     height: 75px;
-
                 }
                 .content {
                     padding-left: 10px;
@@ -340,6 +340,40 @@ main {
                         font-style: italic;
                         color: #fa4b2a;
                         text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+    .roller {
+        display: none;
+        .title {
+            .starburst {
+                width: 100px;
+                height: 100px;
+            }
+            span {
+                text-transform: uppercase;
+                font-style: italic;
+                color: #fff;
+                background-color: black;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                overflow-x: scroll;
+                width: 100%;
+                li {
+                    height: 160px;
+                    width: auto;
+                    .image {
+                        height: 115px;
+                        width: auto;
+                    }
+                    h3 {
+                        font-size: .8em;
+                        text-align: center;
+                        padding-top: 4px;
                     }
                 }
             }
@@ -611,9 +645,9 @@ footer {
                 }
             }
         }
-    }
-    .see-more {
-        // background-color: #fff;
+        .roller {
+            display: block;
+        }
     }
     footer {
         .foot-basics, .foot-sections, .foot-social, .search {
@@ -632,6 +666,32 @@ footer {
         }
         .foot-logo {
             text-align: right;
+        }
+    }
+}
+@media (min-width: 700px) {
+    main {
+        .bat-one {
+            display: flex;
+            & > .m-slot:nth-of-type(1) {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 350px;
+            }
+            & > .m-slot:nth-of-type(2) {
+                position: relative;
+                top: -350px;
+                left: 50%;
+                width: 50%;
+            }
+            & > .m-slot:nth-of-type(3) {
+                position: relative;
+                top: -350px;
+                left: 50%;
+                width: 50%;
+            }
         }
     }
 }

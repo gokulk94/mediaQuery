@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheets/screen.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/fontello.css" media="screen" title="no title" charset="utf-8">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://underscorejs.org/underscore-min.js" charset="utf-8"></script>
+        <title>Scripter</title>
+    </head>
+    <body>
+        <form method="post">
+            <label for="">Selected Item</label><div class="select"></div>
+
+            <!-- <button type="button" class="">Submit</button> -->
+            <div class="main">
+            <ul class="list"><li></li></ul>
+            <span class="icon-down-open" id="clicker"></span>
+            </div>
+            <select class="selector">
+                <option selected>Choose an option</option>
+                <option>one</option>
+                <option>two</option>
+                <option>three</option>
+                <option>four</option>
+            </select>
+
+        </form>
+        <script>
+
+
+            var nav = false;
+            function run() {
+                nav = !(nav);
+                if(nav == true) {
+                    $(".list").css('overflow', 'visible');
+                    $("#clicker").addClass("icon-up-open");
+                } else {
+                    $(".list").css('overflow', 'hidden');
+                    $("#clicker").removeClass();
+                    $("#clicker").addClass("icon-down-open");
+
+                }
+            }
+
+            $(document).ready(function() {
+                //Data Retreived from select tag.
+                var str = $(".selector");
+                var opt = $(".selector").find("option");
+                var arr = [];
+                var temp;
+                opt.each(function() {
+                    arr.push(this.innerText);
+                    console.log(this.innerText);
+                });
+
+                _.each(arr, function(a) {
+                    $(".list").append("<li>" + a + "</li>");
+                });
+
+
+                //Drop Down function goes here.
+                $("#clicker").on('click', run);
+                $("ul").on('click', run);
+
+
+                $("li").on('click', function() {
+                    temp = this.innerText;
+                    $("li:first-child").replaceWith("<li>" + temp + "</li>");
+                    var ind = $(this).index();
+                    $(".selector > option").removeAttr('selected');
+                    $(".selector > option").eq(ind-1).attr('selected', 'selected');
+                    // $("selector").find("option")
+
+                });
+
+            });
+
+        </script>
+    </body>
+</html>
